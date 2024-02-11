@@ -3,7 +3,7 @@ export const ShowIncrement = ({ increment }) => {
     <button 
       className="btn btn-primary"
       onClick={() => {
-        increment()
+        increment( 5 );
       }}
     >
       Incrementar
