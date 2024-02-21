@@ -3,6 +3,7 @@ import { LoadingQuote, Quote } from "./";
 
 export const MultipleCustomHooks = () => {
 
+  const { counter, increment } = useCounter(1);
   const { data, isLoading, hasError, getFetch } = useFetch('https://api.breakingbadquotes.xyz/v1/quotes');
   const { author, quote } = !!data && data[0];
 
